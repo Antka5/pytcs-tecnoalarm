@@ -12,7 +12,7 @@ class HandshakeEntrypoint(BaseModel):
 class HandshakeAccount(BaseModel):
     accountId: int
     backupDate: int
-    features: list
+    features: list | None = None   # <-- cambiata
     lastLogin: int
     subscriptionDate: int
 
